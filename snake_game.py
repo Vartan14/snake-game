@@ -46,13 +46,10 @@ def play():
                 snake.reset()
                 scoreboard.reset()
 
-def close_window():
-    screen.bye()
-
 
 scoreboard.start_game()
 screen.onkey(play, "space")
-screen.onkey(close_window, 'Escape')
+
 
 # run
 screen.mainloop()
